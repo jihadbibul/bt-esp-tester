@@ -2,15 +2,15 @@
 #include "Config.h"
 #include "BluetoothManager.h"
 
-BluetoothManager bluetooth;
+BluetoothManager bt;
 
 void setup() {
     Serial.begin(SERIAL_BAUDRATE);
     delay(1000);
-    Serial.println("=== ESP32 Bluetooth Modular ===");
-    bluetooth.begin();
+    Serial.println("=== ESP32 Bluetooth Modular Test ===");
+    bt.begin();
 }
 
 void loop() {
-    bluetooth.handle();
+    bt.handle();
 }

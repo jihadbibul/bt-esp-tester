@@ -10,10 +10,7 @@ public:
 
 private:
     BluetoothSerial SerialBT;
-    bool lastConnected = false;
-
-    void handleConnection();
-    void handleIncomingData();
+    bool lastState = false;
 };
 
 #endif
